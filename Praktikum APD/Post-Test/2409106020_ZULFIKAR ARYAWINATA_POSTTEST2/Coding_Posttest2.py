@@ -6,13 +6,5 @@ Fakultas = input("Asal Fakultas Anda :")
 Universitas = input("Asal Universitas Anda :")
 Hobi = input("Hobi Anda :")
 
-print("Halo, perkenalkan nama saya", Nama)
-print("biasa dipanggil", Panggilan)
-print("dengan NIM ", NIM)
-print("Saya dari Prodi ", Prodi)
-print("Fakultas ", Fakultas)
-print(Universitas)
-print("saya memiliki hobi", Hobi)
-print("Sekian perkenalan dari saya, terima kasih. ")
-
-print("3 angka di belakang NIM dimoduluskan dengan 6 =", 20 % 6)
+print("Halo, nama saya",Nama,", biasa dipanggil",Panggilan,". NIM saya adalah",NIM,
+    ". Saya dari Program Studi",Prodi,", Fakultas",Fakultas,",",Universitas,". Saya memiliki hobi",Hobi,".")
