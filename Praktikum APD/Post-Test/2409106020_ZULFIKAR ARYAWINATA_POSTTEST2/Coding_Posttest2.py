@@ -15,4 +15,4 @@ print(Universitas)
 print("saya memiliki hobi", Hobi)
 print("Sekian perkenalan dari saya, terima kasih. ")
 
-print(20 % 6)
+print("3 angka di belakang NIM dimoduluskan dengan 6 =", 20 % 6)
