@@ -1,0 +1,18 @@
+Nama = input("Masukkan Nama Lengkap Anda :")
+NIM = input("Masukkan NIM Anda :")
+Panggilan = input("Nama Panggilan :")
+Prodi = input("Masukkan Prodi Anda :")
+Fakultas = input("Asal Fakultas Anda :")
+Universitas = input("Asal Universitas Anda :")
+Hobi = input("Hobi Anda :")
+
+print("Halo, perkenalkan nama saya", Nama)
+print("biasa dipanggil", Panggilan)
+print("dengan NIM ", NIM,)
+print("Saya dari Prodi ", Prodi)
+print("Fakultas ", Fakultas)
+print(Universitas)
+print("saya memiliki hobi", Hobi)
+print("Sekian perkenalan dari saya, terima kasih. ")
+
+print(20 % 6)
