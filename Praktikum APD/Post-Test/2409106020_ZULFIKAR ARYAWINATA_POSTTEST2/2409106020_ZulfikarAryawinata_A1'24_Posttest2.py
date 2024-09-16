@@ -8,7 +8,7 @@ Hobi = input("Hobi Anda :")
 
 print("Halo, perkenalkan nama saya", Nama)
 print("biasa dipanggil", Panggilan)
-print("dengan NIM ", NIM,)
+print("dengan NIM ", NIM)
 print("Saya dari Prodi ", Prodi)
 print("Fakultas ", Fakultas)
 print(Universitas)
