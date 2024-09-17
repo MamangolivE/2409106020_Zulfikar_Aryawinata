@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106020_ZulfikarAryawinata_A1'24_Posttest2"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 09:18:31 AM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtS1VDUE45UEM7MjAyNC0wOS0xNTswNzo0NjoyOCBQTTsyNjc1"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtS1VDUE45UEM7MjAyNC0wOS0xNzswOToxODozMSBBTTs1OzI3Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nama, Panggilan, Prodi, Fakultas, Universitas, Hobi" type="String" array="False" size=""/>
+            <declare name="NIM, Usia" type="Integer" array="False" size=""/>
+            <declare name="Tinggi, BB" type="Real" array="False" size=""/>
+            <input variable="Nama"/>
+            <input variable="NIM"/>
+            <input variable="Panggilan"/>
+            <input variable="Prodi"/>
+            <input variable="Fakultas"/>
+            <input variable="Universitas"/>
+            <input variable="Usia"/>
+            <input variable="Tinggi"/>
+            <input variable="BB"/>
+            <input variable="Hobi"/>
+            <output expression="&quot;Halo, perkenalkan Nama saya &quot;" newline="False"/>
+            <output expression="Nama" newline="False"/>
+            <output expression="&quot;, biasa Dipanggil &quot;" newline="False"/>
+            <output expression="Panggilan" newline="False"/>
+            <output expression="&quot;. NIM saya adalah &quot;" newline="False"/>
+            <output expression="NIM" newline="False"/>
+            <output expression="&quot;. Saya dari Program Studi &quot;" newline="False"/>
+            <output expression="Prodi" newline="False"/>
+            <output expression="&quot;, Fakultas &quot;" newline="False"/>
+            <output expression="Fakultas" newline="False"/>
+            <output expression="&quot;, &quot;" newline="False"/>
+            <output expression="Universitas" newline="False"/>
+            <output expression="&quot;. Sekarang saya berusia &quot;" newline="False"/>
+            <output expression="Usia" newline="False"/>
+            <output expression="&quot; tahun. Tinggi badan saya adalah &quot;" newline="False"/>
+            <output expression="Tinggi" newline="False"/>
+            <output expression="&quot;cm dan berat badan saya adalah &quot;" newline="False"/>
+            <output expression="BB" newline="False"/>
+            <output expression="&quot;Kg. Saya memiliki hobi &quot;" newline="False"/>
+            <output expression="Hobi" newline="False"/>
+            <output expression="&quot;.&quot;" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
