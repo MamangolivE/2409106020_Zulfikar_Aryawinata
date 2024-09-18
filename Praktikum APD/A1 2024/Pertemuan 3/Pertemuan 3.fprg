@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pertemuan 3"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 08:20:55 AM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtS1VDUE45UEM7MjAyNC0wOS0xODswODowODo1NCBBTTsyNjYx"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtS1VDUE45UEM7MjAyNC0wOS0xODswODoyMDo1NSBBTTsxOzI3NjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <input variable="angka"/>
+            <if expression="angka == 1">
+                <then>
+                    <output expression="angka" newline="True"/>
+                </then>
+                <else>
+                    <if expression="angka == 2">
+                        <then>
+                            <output expression="angka" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Invalid&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
