@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106020_ZulfikarAryawinata_A24_Posttest4"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-01 10:15:25 AM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtS1VDUE45UEM7MjAyNC0wOS0yOTswNDowMDowOSBQTTsyNjY2"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtS1VDUE45UEM7MjAyNC0xMC0wMTswOTo1OTo1NSBBTTs0O0FDRVI7TEFQVE9QLUtVQ1BOOVBDOzIwMjQtMDktMjI7MDg6NDM6MDAgQU07MjQwOTEwNjAyMF9adWxmaWthckFyeWF3aW5hdGFfQTI0X1Bvc3R0ZXN0My5mcHJnOzk3NjM="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtS1VDUE45UEM7MjAyNC0xMC0wMTsxMDoxNToyNSBBTTs2OzI3NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama, username, jawab, ya" type="String" array="False" size=""/>
+            <declare name="BB, KonversiBB, TB, KonversiTB, BMRPria, BMRWanita, Kalori" type="Real" array="False" size=""/>
+            <declare name="NIM, password, salah, perulangan, Gender, umur, LAH" type="Integer" array="False" size=""/>
+            <assign variable="nama" expression="&quot;Zulfikar&quot;"/>
+            <assign variable="NIM" expression="20"/>
+            <output expression="&quot;Selamat Datang. Silakan masukkan username dan password anda untuk login.&quot;" newline="True"/>
+            <output expression="&quot;username :&quot;" newline="True"/>
+            <input variable="username"/>
+            <output expression="&quot;password(NIM) :&quot;" newline="True"/>
+            <input variable="password"/>
+            <if expression="username == nama and password == NIM">
+                <then>
+                    <output expression="&quot;Login Berhasil&quot;" newline="True"/>
+                    <assign variable="jawab" expression="&quot;ya&quot;"/>
+                    <while expression="jawab == &quot;ya&quot;">
+                        <output expression="&quot;Selamat datang di Program Kalkulator Kebutuhan Kalori Harian&quot;" newline="True"/>
+                        <output expression="&quot;Pilihlah Jenis Kelamin Anda&quot;" newline="True"/>
+                        <output expression="&quot;1. Pria&quot;" newline="True"/>
+                        <output expression="&quot;2. Wanita&quot;" newline="True"/>
+                        <input variable="Gender"/>
+                        <if expression="Gender&lt;=2">
+                            <then>
+                                <if expression="Gender==1">
+                                    <then>
+                                        <output expression="&quot;Masukkan umur anda&quot;" newline="True"/>
+                                        <input variable="umur"/>
+                                        <output expression="&quot;Input Berat Badan(satuan gr)&quot;" newline="True"/>
+                                        <input variable="BB"/>
+                                        <assign variable="KonversiBB" expression="BB/1000"/>
+                                        <output expression="&quot;Input Tinggi Badan (satuan Km)&quot;" newline="True"/>
+                                        <input variable="TB"/>
+                                        <assign variable="KonversiTB" expression="TB*100000"/>
+                                        <assign variable="BMRPria" expression="(10*KonversiBB)+(6.25*KonversiTB)-(5*umur)+5"/>
+                                        <output expression="&quot;BMR anda =&quot;" newline="False"/>
+                                        <output expression="BMRPria" newline="True"/>
+                                        <output expression="&quot;Pilihlah Level Aktivitas Harian Anda&quot;" newline="True"/>
+                                        <output expression="&quot;1. Aktivitas Minimal (jarang bergerak)&quot;" newline="True"/>
+                                        <output expression="&quot;2. Aktivitas Sedang (olahraga 1-3 kali seminggu)&quot;" newline="True"/>
+                                        <output expression="&quot;3. Aktivitas Tinggi (olahraga 4-7 kali seminggu)&quot;" newline="True"/>
+                                        <input variable="LAH"/>
+                                        <if expression="LAH==1">
+                                            <then>
+                                                <assign variable="Kalori" expression="BMRPria*1.25"/>
+                                                <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                <output expression="Kalori" newline="False"/>
+                                                <output expression="&quot;kal&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="LAH==2">
+                                                    <then>
+                                                        <assign variable="Kalori" expression="BMRPria*1.36"/>
+                                                        <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                        <output expression="Kalori" newline="False"/>
+                                                        <output expression="&quot;kal&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="LAH==3">
+                                                            <then>
+                                                                <assign variable="Kalori" expression="BMRPria*1.72"/>
+                                                                <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                <output expression="Kalori" newline="True"/>
+                                                                <output expression="&quot;kal&quot;" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="&quot;Invalid&quot;" newline="True"/>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <if expression="Gender==2">
+                                            <then>
+                                                <output expression="&quot;Masukkan umur anda&quot;" newline="True"/>
+                                                <input variable="umur"/>
+                                                <output expression="&quot;Input Berat Badan(satuan gr)&quot;" newline="True"/>
+                                                <input variable="BB"/>
+                                                <assign variable="KonversiBB" expression="BB/1000"/>
+                                                <output expression="&quot;Input Tinggi Badan (satuan Km)&quot;" newline="True"/>
+                                                <input variable="TB"/>
+                                                <assign variable="KonversiTB" expression="TB*100000"/>
+                                                <assign variable="BMRWanita" expression="(10*KonversiBB)+(6.25*KonversiTB)-(5*umur)-161"/>
+                                                <output expression="&quot;BMR anda =&quot;" newline="False"/>
+                                                <output expression="BMRWanita" newline="True"/>
+                                                <output expression="&quot;Pilihlah Level Aktivitas Harian Anda&quot;" newline="True"/>
+                                                <output expression="&quot;1. Aktivitas Minimal (jarang bergerak)&quot;" newline="True"/>
+                                                <output expression="&quot;2. Aktivitas Sedang (olahraga 1-3 kali seminggu)&quot;" newline="True"/>
+                                                <output expression="&quot;3. Aktivitas Tinggi (olahraga 4-7 kali seminggu)&quot;" newline="True"/>
+                                                <input variable="LAH"/>
+                                                <if expression="LAH==1">
+                                                    <then>
+                                                        <assign variable="Kalori" expression="BMRWanita*1.25"/>
+                                                        <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                        <output expression="Kalori" newline="False"/>
+                                                        <output expression="&quot;kal&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="LAH==2">
+                                                            <then>
+                                                                <assign variable="Kalori" expression="BMRWanita*1.36"/>
+                                                                <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                <output expression="Kalori" newline="False"/>
+                                                                <output expression="&quot;kal&quot;" newline="True"/>
+                                                            </then>
+                                                            <else>
+                                                                <if expression="LAH==3">
+                                                                    <then>
+                                                                        <assign variable="Kalori" expression="BMRWanita*1.72"/>
+                                                                        <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                        <output expression="Kalori" newline="False"/>
+                                                                        <output expression="&quot;kal&quot;" newline="True"/>
+                                                                    </then>
+                                                                    <else>
+                                                                        <output expression="&quot;Invalid&quot;" newline="True"/>
+                                                                    </else>
+                                                                </if>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Invalid&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Invalid&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <output expression="&quot;apakah anda ingin mengulang program ?&quot;" newline="True"/>
+                        <input variable="jawab"/>
+                    </while>
+                    <output expression="&quot;PROGRAM SELESAI&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="perulangan" start="2" end="3" direction="inc" step="1">
+                        <output expression="&quot;username/password salah. &quot;" newline="True"/>
+                        <output expression="&quot;username :&quot;" newline="True"/>
+                        <input variable="username"/>
+                        <output expression="&quot;password(NIM) :&quot;" newline="True"/>
+                        <input variable="password"/>
+                        <if expression="username == nama and password == NIM">
+                            <then>
+                                <assign variable="perulangan" expression="3"/>
+                                <output expression="&quot;Login Berhasil&quot;" newline="True"/>
+                                <assign variable="jawab" expression="&quot;ya&quot;"/>
+                                <while expression="jawab == &quot;ya&quot;">
+                                    <output expression="&quot;Selamat datang di Program Kalkulator Kebutuhan Kalori Harian&quot;" newline="True"/>
+                                    <output expression="&quot;Pilihlah Jenis Kelamin Anda&quot;" newline="True"/>
+                                    <output expression="&quot;1. Pria&quot;" newline="True"/>
+                                    <output expression="&quot;2. Wanita&quot;" newline="True"/>
+                                    <input variable="Gender"/>
+                                    <if expression="Gender&lt;=2">
+                                        <then>
+                                            <if expression="Gender==1">
+                                                <then>
+                                                    <output expression="&quot;Masukkan umur anda&quot;" newline="True"/>
+                                                    <input variable="umur"/>
+                                                    <output expression="&quot;Input Berat Badan(satuan gr)&quot;" newline="True"/>
+                                                    <input variable="BB"/>
+                                                    <assign variable="KonversiBB" expression="BB/1000"/>
+                                                    <output expression="&quot;Input Tinggi Badan (satuan Km)&quot;" newline="True"/>
+                                                    <input variable="TB"/>
+                                                    <assign variable="KonversiTB" expression="TB*100000"/>
+                                                    <assign variable="BMRPria" expression="(10*KonversiBB)+(6.25*KonversiTB)-(5*umur)+5"/>
+                                                    <output expression="&quot;BMR anda =&quot;" newline="False"/>
+                                                    <output expression="BMRPria" newline="True"/>
+                                                    <output expression="&quot;Pilihlah Level Aktivitas Harian Anda&quot;" newline="True"/>
+                                                    <output expression="&quot;1. Aktivitas Minimal (jarang bergerak)&quot;" newline="True"/>
+                                                    <output expression="&quot;2. Aktivitas Sedang (olahraga 1-3 kali seminggu)&quot;" newline="True"/>
+                                                    <output expression="&quot;3. Aktivitas Tinggi (olahraga 4-7 kali seminggu)&quot;" newline="True"/>
+                                                    <input variable="LAH"/>
+                                                    <if expression="LAH==1">
+                                                        <then>
+                                                            <assign variable="Kalori" expression="BMRPria*1.25"/>
+                                                            <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                            <output expression="Kalori" newline="False"/>
+                                                            <output expression="&quot;kal&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="LAH==2">
+                                                                <then>
+                                                                    <assign variable="Kalori" expression="BMRPria*1.36"/>
+                                                                    <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                    <output expression="Kalori" newline="False"/>
+                                                                    <output expression="&quot;kal&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="LAH==3">
+                                                                        <then>
+                                                                            <assign variable="Kalori" expression="BMRPria*1.72"/>
+                                                                            <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                            <output expression="Kalori" newline="True"/>
+                                                                            <output expression="&quot;kal&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;Invalid&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="Gender==2">
+                                                        <then>
+                                                            <output expression="&quot;Masukkan umur anda&quot;" newline="True"/>
+                                                            <input variable="umur"/>
+                                                            <output expression="&quot;Input Berat Badan(satuan gr)&quot;" newline="True"/>
+                                                            <input variable="BB"/>
+                                                            <assign variable="KonversiBB" expression="BB/1000"/>
+                                                            <output expression="&quot;Input Tinggi Badan (satuan Km)&quot;" newline="True"/>
+                                                            <input variable="TB"/>
+                                                            <assign variable="KonversiTB" expression="TB*100000"/>
+                                                            <assign variable="BMRWanita" expression="(10*KonversiBB)+(6.25*KonversiTB)-(5*umur)-161"/>
+                                                            <output expression="&quot;BMR anda =&quot;" newline="False"/>
+                                                            <output expression="BMRWanita" newline="True"/>
+                                                            <output expression="&quot;Pilihlah Level Aktivitas Harian Anda&quot;" newline="True"/>
+                                                            <output expression="&quot;1. Aktivitas Minimal (jarang bergerak)&quot;" newline="True"/>
+                                                            <output expression="&quot;2. Aktivitas Sedang (olahraga 1-3 kali seminggu)&quot;" newline="True"/>
+                                                            <output expression="&quot;3. Aktivitas Tinggi (olahraga 4-7 kali seminggu)&quot;" newline="True"/>
+                                                            <input variable="LAH"/>
+                                                            <if expression="LAH==1">
+                                                                <then>
+                                                                    <assign variable="Kalori" expression="BMRWanita*1.25"/>
+                                                                    <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                    <output expression="Kalori" newline="False"/>
+                                                                    <output expression="&quot;kal&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="LAH==2">
+                                                                        <then>
+                                                                            <assign variable="Kalori" expression="BMRWanita*1.36"/>
+                                                                            <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                            <output expression="Kalori" newline="False"/>
+                                                                            <output expression="&quot;kal&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="LAH==3">
+                                                                                <then>
+                                                                                    <assign variable="Kalori" expression="BMRWanita*1.72"/>
+                                                                                    <output expression="&quot;Kebutuhan Kalori Harian anda adalah &quot;" newline="False"/>
+                                                                                    <output expression="Kalori" newline="False"/>
+                                                                                    <output expression="&quot;kal&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;Invalid&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Invalid&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Invalid&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;apakah anda ingin mengulang program ?&quot;" newline="True"/>
+                                    <input variable="jawab"/>
+                                </while>
+                                <output expression="&quot;PROGRAM SELESAI&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="perulangan == 3">
+                                    <then>
+                                        <output expression="&quot;Login Gagal.&quot;" newline="True"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
